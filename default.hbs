@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+  <link rel="stylesheet" href="//cloud.typography.com/619254/777982/css/fonts.css">
+  <link rel="stylesheet" href="{{asset "css/screen.css"}}">
+  {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+  <header {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{else}}class="no-cover{{/if}}">
+    <h1><a href="{{@blog.url}}" rel="home">{{@blog.title}}</a></h1>
+    <p>{{{@blog.description}}}</p>
+  </header>
+  {{{body}}}
+  <footer>
+    <p>&copy; {{date format="YYYY"}} <a href="{{@blog.url}}" rel="home">Sam Soffes</a> &mdash; <a href="{{@blog.url}}/rss/">Subscribe</a></p>
+    <p>Proudly powered by <a href="https://ghost.org" rel="external nofollow">Ghost</a></p>
+  </footer>
+  <script src="{{asset "js/external.js"}}"></script>
+  {{ghost_foot}}
+</body>
+</html>

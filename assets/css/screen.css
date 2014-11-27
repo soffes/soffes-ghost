@@ -1,0 +1,245 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+section, header, footer, nav, article, aside, figure {
+  display: block;
+  width: 100%; }
+
+mark, time, meter, progress {
+  display: inline; }
+
+html {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  color: #222;
+  font-size: 22px;
+  font-family: "Whitney A", "Whitney B";
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: 0 10px; }
+  @media all and (max-width: 660px) {
+    body {
+      font-size: 18px;
+      line-height: 1.6em; } }
+
+input {
+  line-height: 1em; }
+
+a {
+  color: #0881b3;
+  text-decoration: none;
+  border-bottom: 1px solid transparent; }
+  a:hover {
+    -webkit-transition-property: border;
+    -moz-transition-property: border;
+    transition-property: border;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    border-bottom: 1px solid; }
+
+strong {
+  font-weight: 600;
+  font-style: normal; }
+
+mark {
+  background-color: #fffeca;
+  padding: 0 0.1em; }
+
+i {
+  font-style: italic; }
+
+abbr {
+  border-bottom: 1px dashed;
+  cursor: help; }
+
+p {
+  margin: 0 0 1.5em; }
+
+hr {
+  margin: 0 auto 2em;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  width: 60%; }
+
+blockquote {
+  border-left: 5px solid #ddd;
+  color: #888;
+  margin: 0 0 1em;
+  padding-left: 1em; }
+  blockquote a {
+    color: #444; }
+    blockquote a:hover {
+      color: #0881b3; }
+
+small {
+  font-size: 0.8em;
+  color: #999;
+  margin-left: 0.2em; }
+  small a {
+    color: #444; }
+    small a:hover {
+      color: #2e80d3; }
+
+h1, h2 {
+  font-size: 1.3em;
+  font-weight: 600; }
+  h1 a, h2 a {
+    color: #222;
+    border: 0; }
+
+body > header h1 {
+  color: #000;
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-family: 'Landmark Dimensional A', 'Landmark Dimensional B';
+  font-weight: 400;
+  text-transform: capitalize; }
+  body > header h1 a, body > header h1 a:hover {
+    color: #f6291d;
+    border: 0; }
+
+h3 {
+  font-weight: 600;
+  color: #999; }
+  h3 a {
+    color: #999;
+    border: 0; }
+
+h4 {
+  color: #999;
+  font-weight: 600;
+  margin-bottom: 0.2em; }
+
+body > header, body > section, body > footer, main {
+  max-width: 640px;
+  margin: 0 auto; }
+
+body > header {
+  color: #949494;
+  margin: 4em auto 2em; }
+  body > header p {
+    margin: 0; }
+  @media all and (max-width: 660px) {
+    body > header {
+      margin: 2em auto 3em; } }
+
+a.hire, a.hire:hover {
+  color: #f6291d; }
+
+body > footer {
+  color: #aaa;
+  text-shadow: #fff 0 1px 0;
+  font-size: 0.8em;
+  text-align: center;
+  margin: 2em auto; }
+  body > footer a {
+    color: #aaa; }
+    body > footer a:hover {
+      color: #0881b3; }
+  body > footer p {
+    margin-bottom: 0; }
+
+section.server-error {
+  margin-bottom: 3em; }
+
+span.gray {
+  color: #777; }
+
+ul.list, ol.list {
+  margin: 0 0 2em 0.5em; }
+  ul.list li, ol.list li {
+    margin-left: 1em; }
+
+ul.list li {
+  list-style: disc; }
+
+ol.list li {
+  list-style: decimal; }
+
+ol.list li ol li {
+  list-style: lower-alpha; }
+
+div.video {
+  position: relative; }
+  div.video img {
+    display: block;
+    width: 100%;
+    height: auto;
+    visibility: hidden; }
+  div.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+article {
+  margin-bottom: 2em; }
+  article header p {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    color: #999; }
+  article section p:last-child {
+    margin-bottom: 0; }
+  article a.continue {
+    font-size: 0.9em;
+    white-space: nowrap; }
+
+body.home-template article + article, body.archive-template article + article {
+  margin-top: 6em; }
+
+nav.pagination {
+  text-align: center; }
+  nav.pagination span.page-number {
+    padding: 0 0.5em; }
+
+p.all-posts {
+  text-align: center; }
+
+/*# sourceMappingURL=screen.css.map */

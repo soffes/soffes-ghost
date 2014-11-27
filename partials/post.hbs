@@ -1,0 +1,12 @@
+<article class="{{post_class}}">
+  <header>
+    <h2><a href="{{url}}">{{{title}}}</a></h2>
+    <p>
+      {{tags prefix="<span class=\"tags\">" suffix="</span>"}}
+      <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM D, YYYY"}}</time>
+    </p>
+  </header>
+  <section>
+    {{content}}
+  </section>
+</article>
